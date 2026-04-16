@@ -1,0 +1,36 @@
+{
+  "name": "warmheart-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "eslint": "eslint --ext .js,.ts,",
+    "eslint:fix": "eslint --fix --ext .js,.ts,"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^7.7.0",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.2.0",
+    "globals": "^17.5.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.6.1",
+    "lint-staged": "^16.4.0",
+    "nodemon": "^3.1.14",
+    "prisma": "^7.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.2"
+  }
+}
