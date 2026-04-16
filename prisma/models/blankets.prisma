@@ -1,0 +1,11 @@
+model Blankets {
+    id        Int      @id @default(autoincrement())
+    name      String
+    size      String
+    price     Decimal
+    image     String
+    color     String
+    popular   Boolean
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
