@@ -1,5 +1,5 @@
 model Blankets {
-    id        Int      @id @default(autoincrement())
+    id        String   @id @default(uuid())
     name      String
     size      String
     price     Decimal
@@ -8,4 +8,6 @@ model Blankets {
     popular   Boolean
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
+
+    cartItems CartItem[]
 }

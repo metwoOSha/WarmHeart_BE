@@ -1,0 +1,108 @@
+{
+    "blankets": [
+        {
+            "name": "Ingrun",
+            "size": "130x170 cm",
+            "price": 90,
+            "image": "/images/ingrun.png",
+            "color": "grey",
+            "popular": false
+        },
+        {
+            "name": "Mialotta",
+            "size": "130x170 cm",
+            "price": 140,
+            "image": "/images/mialotta.png",
+            "color": "mustard yellow",
+            "popular": true
+        },
+        {
+            "name": "Luddmalla",
+            "size": "130x170 cm",
+            "price": 99,
+            "image": "/images/luddmalla.png",
+            "color": "grey and white",
+            "popular": true
+        },
+        {
+            "name": "Vivianna",
+            "size": "120x180 cm",
+            "price": 175,
+            "image": "/images/vivianna.png",
+            "color": "light brown",
+            "popular": true
+        },
+        {
+            "name": "Evali",
+            "size": "130x170 cm",
+            "price": 90,
+            "image": "/images/evali.png",
+            "color": "dark grey",
+            "popular": true
+        },
+        {
+            "name": "Kersti",
+            "size": "150x200 cm",
+            "price": 175,
+            "image": "/images/kersti.png",
+            "color": "mustard yellow",
+            "popular": true
+        },
+        {
+            "name": "Helgun",
+            "size": "150x200 cm",
+            "price": 135,
+            "image": "/images/helgun.png",
+            "color": "beige with white",
+            "popular": true
+        },
+        {
+            "name": "Dagnhild",
+            "size": "150x200 cm",
+            "price": 150,
+            "image": "/images/dagnhild.png",
+            "color": "brown and beige",
+            "popular": true
+        },
+        {
+            "name": "Varkrage",
+            "size": "110x170 cm",
+            "price": 90,
+            "image": "/images/varkrage.png",
+            "color": "dark brown",
+            "popular": false
+        },
+        {
+            "name": "Dabildun",
+            "size": "130x170 cm",
+            "price": 115,
+            "image": "/images/dabildun.png",
+            "color": "red and white",
+            "popular": true
+        },
+        {
+            "name": "Ingabritta",
+            "size": "130x170 cm",
+            "price": 110,
+            "image": "/images/ingabritta.png",
+            "color": "pink",
+            "popular": true
+        },
+        {
+            "name": "Yivali",
+            "size": "130x170 cm",
+            "price": 110,
+            "image": "/images/yivali.png",
+            "color": "dark grey",
+            "popular": false
+        },
+        {
+            "name": "Yivali",
+            "size": "130x170 cm",
+            "price": 120,
+            "image": "/images/yivali.png",
+            "color": "dark grey",
+            "popular": false
+        }
+    ]
+}
