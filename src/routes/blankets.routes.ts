@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getBlankets, getBlanketById } from '../controllers/blankets.controller';
+import { getBlankets, getBlanketById } from '../controllers/blankets.controller.js';
 
 const router = Router();
 

@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(timeout 8 npx tsx src/index.ts)",
-      "Bash(echo \"EXIT: $?\")"
-    ]
-  }
-}
