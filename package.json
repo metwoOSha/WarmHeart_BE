@@ -10,7 +10,8 @@
         "seed": "tsx prisma/seed.ts",
         "prepare": "husky",
         "eslint": "eslint --ext .js,.ts,",
-        "eslint:fix": "eslint --fix --ext .js,.ts,"
+        "eslint:fix": "eslint --fix --ext .js,.ts,",
+        "build": "tsc"
     },
     "author": "",
     "license": "ISC",
