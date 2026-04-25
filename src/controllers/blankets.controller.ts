@@ -6,7 +6,7 @@ export async function getBlankets(req: Request, res: Response) {
         const items = await prisma.blankets.findMany();
         res.status(200).json(items);
     } catch (error) {
-        res.status(500).json({ message: `Server error: ${error}` });
+        res.status(500).json({ message: `${error}` });
     }
 }
 
