@@ -3,7 +3,7 @@ import { prisma } from '../lib/prisma.js';
 
 export async function getCart(req: Request, res: Response) {
     try {
-        const userId = req.user?.userId;
+        const userId = req.user!.id;
         const cart = await prisma.cart.findFirst({
             where: { userId },
             include: {
@@ -21,7 +21,7 @@ export async function getCart(req: Request, res: Response) {
 
 export async function addItem(req: Request, res: Response) {
     try {
-        const userId = req.user?.userId;
+        const userId = req.user!.id;
         const { blanketId, quantity } = req.body;
         let cart = await prisma.cart.findFirst({ where: { userId } });
         if (!cart) {
