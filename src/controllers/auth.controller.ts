@@ -17,7 +17,14 @@ export async function register(req: Request, res: Response) {
 
         const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET!, { expiresIn: '7d' });
 
-        res.status(201).json(token);
+        res.status(201)
+            .cookie('token', token, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: 'lax',
+                maxAge: 7 * 24 * 60 * 60 * 1000,
+            })
+            .json({ message: 'Registered' });
     } catch (error) {
         res.status(500).json({ message: `${error}` });
     }
@@ -37,8 +44,23 @@ export async function login(req: Request, res: Response) {
 
         const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET!, { expiresIn: '7d' });
 
-        res.status(200).json(token);
+        res.status(200)
+            .cookie('token', token, {
+                httpOnly: true,
+                secure: process.env.NODE_ENV === 'production',
+                sameSite: 'lax',
+                maxAge: 7 * 24 * 60 * 60 * 1000,
+            })
+            .json({ message: 'OK' });
     } catch (error) {
         res.status(500).json({ message: `${error}` });
     }
+}
+
+export async function logout(req: Request, res: Response) {
+    res.clearCookie('token').json({ message: 'Logged out' });
+}
+
+export async function me(req: Request, res: Response) {
+    res.json(req.user);
 }

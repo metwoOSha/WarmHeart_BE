@@ -5,10 +5,17 @@ import cors from 'cors';
 import blanketsRouter from './routes/blankets.routes.js';
 import authRouter from './routes/auth.routes.js';
 import cartRouter from './routes/cart.routes.js';
+import cookieParser from 'cookie-parser';
 
 const server = express();
 
-server.use(cors());
+server.use(cookieParser());
+server.use(
+    cors({
+        origin: process.env.NEXT_PUBLIC_APP_URL,
+        credentials: true,
+    })
+);
 server.use(express.json());
 
 server.use('/api/blankets', blanketsRouter);
